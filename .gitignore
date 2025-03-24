@@ -1,0 +1,116 @@
+# ========================
+# ✅ 기본 (Next.js 기반)
+# ========================
+/node_modules
+/.pnp
+.pnp.js
+/coverage
+/.next/
+/out/
+/build
+
+# ========================
+# ✅ TypeScript 관련
+# ========================
+*.tsbuildinfo
+next-env.d.ts
+
+# ========================
+# ✅ 환경변수 파일
+# ========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# ✅ IDE 설정 파일
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ========================
+# ✅ macOS, 시스템 파일
+# ========================
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# ========================
+# ✅ Vercel 배포 관련
+# ========================
+.vercel
+
+# ========================
+# ✅ 로그, 디버그
+# ========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================
+# ✅ Git 관련
+# ========================
+*.orig
+
+# ========================
+# ✅ 테스트 결과, 커버리지
+# ========================
+/coverage
+/junit.xml
+/test-report.xml
+
+# ========================
+# ✅ 임시 빌드/캐시 폴더
+# ========================
+.cache/
+tmp/
+temp/
+# dependencies
+node_modules/
+
+# build
+.next/
+out/
+dist/
+
+# env
+.env*
+!.env.example
+
+# system
+.DS_Store
+*.log
+
+# typescript
+*.tsbuildinfo
+
+# dependencies
+node_modules/
+
+# build
+.next/
+out/
+dist/
+
+# env
+.env*
+!.env.example
+
+# system
+.DS_Store
+*.log
+
+# typescript
+*.tsbuildinfo
+
+# vscode
+.vscode/
