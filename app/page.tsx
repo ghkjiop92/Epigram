@@ -1,5 +1,6 @@
-import React from "react"; 
+import styles from "./page.module.css";
 
-export default function Page() {
-    return <h1>Hello, Next.js!</h1>;
+
+export default function Home() {
+    return <div className={styles.page}></div>;
   }
