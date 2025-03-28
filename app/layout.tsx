@@ -9,6 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         {children}
+        <div id="portal" /> 
       </body>
     </html>
   );
