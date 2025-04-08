@@ -1,0 +1,74 @@
+@use '@/styles/mixin' as mixin;
+
+.wrapper {
+  width: 585px;
+  height: 259px;
+  border-radius: 16px;
+  border: 1px solid var(--main-bg-100);
+}
+
+.card {
+  background-color: var(--blue-100);
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  width: 100%;
+  height: 259px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e0e0e0 0,
+    #e0e0e0 1px,
+    transparent 1px,
+    transparent 28px
+  );
+}
+.quote {
+  position: relative;
+  height: 196px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  background-position-y: 14px;
+  background-repeat: repeat;
+  margin-top: 13px;
+}
+
+.author {
+  position: relative;
+  padding: 0 24px;
+
+  color: var(--blue-400);
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 190px;
+  @include mixin.text-2xl-b;
+}
+
+.separator {
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+
+  margin-top: 8px;
+}
+
+.emotiontag {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  color: var(--blue-400);
+  white-space: nowrap;
+  @include mixin.text-2xl-b;
+}
