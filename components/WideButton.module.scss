@@ -1,0 +1,14 @@
+@use '@/styles/mixin' as mixin;
+.button {
+  width: 100%;
+  max-width: 194px;
+  height: 64px;
+  background-color: var(--blue-900);
+  color: white;
+  border-radius: 100px;
+  padding: 16px 20px 20px 20px;
+  gap: 4px;
+  @include mixin.text-xl-p;
+  color: var(--blue-100);
+  cursor: pointer;
+}
