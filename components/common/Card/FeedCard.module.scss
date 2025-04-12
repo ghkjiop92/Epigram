@@ -1,4 +1,29 @@
 @use '@/styles/mixin' as mixin;
+/* EpigramList.module.scss */
+
+/* 전체 페이지 컨테이너, 중앙 정렬 및 내부 여백 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 카드들을 배치할 그리드 */
+.grid {
+  display: grid;
+  /* 최소 카드 너비 585px, 화면에 맞게 자동으로 열 개수를 조절 */
+  grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+  gap: 24px; /* 카드 간 간격 */
+  justify-content: center;
+}
+
+/* 필요시 상단 타이틀이나 기타 레이아웃 요소 추가 */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 .wrapper {
   width: 585px;
