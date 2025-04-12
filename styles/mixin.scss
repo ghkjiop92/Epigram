@@ -1,0 +1,142 @@
+$typography-size-map: (
+  '3xl': 32px,
+  '2xl': 24px,
+);
+
+$typography-line-height-map: (
+  '3xl': 42px,
+  '2xl': 32px,
+);
+
+$typography-weight-map: (
+  'bold': 700,
+  'semi-bold': 600,
+);
+
+@mixin typography($size, $weight) {
+  font-size: map-get($typography-size-map, $size);
+  line-height: map-get($typography-line-height-map, $size);
+  font-weight: map-get($typography-weight-map, $weight);
+}
+
+/* Pretendard */
+@mixin text-4xl-p {
+  font-family: 'Pretendard';
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+@mixin text-3xl-p {
+  font-family: 'Pretendard';
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+@mixin text-2xl-p {
+  font-family: 'Pretendard';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin text-xl-p {
+  font-family: 'Pretendard';
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+@mixin text-lg-p {
+  font-family: 'Pretendard';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+@mixin text-md-p {
+  font-family: 'Pretendard';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin text-sd-p {
+  font-family: 'Pretendard';
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+@mixin text-xs-p {
+  font-family: 'Pretendard';
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Iropke Batang */
+@mixin text-4xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+@mixin text-3xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+@mixin text-2xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+@mixin text-xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@mixin text-lg-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+@mixin text-md-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin text-sm-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin text-xs-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+@mixin text-sm-13-medium-error {
+  font-family: 'Pretendard';
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: right;
+  color: #ff6577;
+}

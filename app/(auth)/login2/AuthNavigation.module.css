@@ -1,8 +1,7 @@
 .navContainer {
   background-color: var(--blue-100);
   width: 100%;
-  max-width: 1920px;
-  height: 80px;
+
   display: flex;
   flex-direction: row;
   align-items: center;

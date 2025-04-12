@@ -1,6 +1,6 @@
 'use client';
 
-import WideButton from '@/components/WideButton';
+import WideButton from '../../components/WideButton';
 
 export default function WideButtonPage() {
   return (

@@ -1,0 +1,157 @@
+@use '@/styles/mixin.scss' as *;
+
+.landingContainer {
+  background-color: var(--blue-100);
+  width: 100%;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #e0e0e0 1px,
+    transparent 1px,
+    transparent 28px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  height: auto;
+}
+.topic {
+  display: flex;
+  justify-content: center;
+  @include text-4xl-p;
+
+  // @include text-style($iropke-styles, '4xl', 'Iropke Batang OTF');
+}
+.writingPrompt {
+  background-color: var(--blue-100);
+  width: 298px;
+  height: 28px;
+}
+
+.serviceIntro {
+  width: 100%;
+  height: 3784px;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.brandSection {
+  background-color: var(--blue-100);
+  width: 100%;
+  height: 1040px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #e0e0e0 1px,
+    transparent 1px,
+    transparent 28px
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  box-sizing: border-box;
+}
+.epigramVisualSet {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 240px;
+  justify-content: center;
+  align-items: center;
+  width: 744px;
+  height: auto;
+  gap: 80px;
+  background-color: transparent;
+}
+.tidbit {
+  display: flex;
+  align-items: flex-end;
+  gap: 80px;
+}
+
+.emotionIcons {
+  display: flex;
+}
+
+.emotionChart {
+  display: flex;
+  gap: 380px;
+  margin-left: 360px;
+  margin-right: 816px;
+}
+.shareContainer {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sharePrompt {
+  display: flex;
+  margin-top: 192px;
+  @include text-3xl-p;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.spreadTreasuredWords {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.sharePrompt span,
+.spreadTreasuredWords span {
+  display: inline-block;
+
+  white-space: nowrap;
+  text-align: center;
+}
+
+.horizontalCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.userNameImage {
+  display: flex;
+  background-color: var(--color-background);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include text-3xl-p;
+  background-color: var(--color-background);
+  width: 100%;
+  padding: 20px;
+}

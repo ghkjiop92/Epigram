@@ -1,29 +1,40 @@
 {
-    "name": "epigram",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start"
-    },
-    "dependencies": {
-        "daisyui": "^5.0.9",
-        "next": "^15.2.3",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "react-icons": "^5.5.0",
-        "sass": "^1.86.0"
-    },
-    "devDependencies": {
-        "@types/jest": "^29.5.14",
-        "@types/react-dom": "^19.0.4",
-        "@typescript-eslint/eslint-plugin": "^8.27.0",
-        "eslint": "^9.22.0",
-        "eslint-config-prettier": "^10.1.1",
-        "eslint-plugin-prettier": "^5.2.4",
-        "prettier": "^3.5.3"
-    },
-    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "name": "epigram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@prisma/client": "6.6.0",
+    "@tanstack/react-query": "^5.71.10",
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "daisyui": "^5.0.9",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "sass": "^1.86.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jest": "^29.5.14",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "^15.2.4",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.4",
+    "prettier": "^3.5.3",
+    "prisma": "^6.6.0",
+    "ts-node": "^10.9.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

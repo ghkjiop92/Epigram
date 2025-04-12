@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
 import { z } from 'zod';
 import styles from './LoginForm.module.scss';
-import Signup from '../signup/SignupForm';
 
 const loginSchema = z.object({
   email: z
@@ -125,73 +124,72 @@ export default function LoginForm() {
 
   return (
     <div className={styles.pageContainer}>
-      <div className={styles.wrapper}>
-        <div className={styles.logoWrapper}>
-          <Link href="/">
-            <Image
-              src="/images/Book.png"
-              alt="Book logo"
-              width={36}
-              height={36}
-              className={styles.logoIcon}
-              priority
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/images/Epigram.png"
-              alt="Epigram logo"
-              width={91}
-              height={26}
-              className={styles.logoText}
-              priority
-            />
-          </Link>
+      <div className={styles.logoWrapper}>
+        <Link href="/">
+          <Image
+            src="/images/Book.png"
+            alt="Book logo"
+            width={36}
+            height={36}
+            className={styles.logoIcon}
+            priority
+          />
+        </Link>
+        <Link href="/">
+          <Image
+            src="/images/Epigram.png"
+            alt="Epigram logo"
+            width={91}
+            height={26}
+            className={styles.logoText}
+            priority
+          />
+        </Link>
+      </div>
+
+      <form onSubmit={handleSubmit} noValidate className={styles.form}>
+        <div className={styles.field}>
+          <label htmlFor="email" className={styles.label}></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            className={styles.input}
+            data-state={formData.email === '이메일' ? 'default' : 'filled'}
+          />
+          {errors.email && <p className={styles.error}>{errors.email}</p>}
         </div>
 
-        <form onSubmit={handleSubmit} noValidate className={styles.form}>
-          <div className={styles.field}>
-            <label htmlFor="email" className={styles.label}></label>
+        <div className={styles.field}>
+          <label htmlFor="pass" className={styles.label}></label>
+          <div className={styles.passwordWrapper}>
             <input
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
+              id="pass"
+              name="pass"
+              type={showPassword ? 'text' : 'password'}
+              value={formData.pass}
               onChange={handleChange}
               onFocus={handleFocus}
               onBlur={handleBlur}
               className={styles.input}
-              data-state={formData.email === '이메일' ? 'default' : 'filled'}
+              data-state={formData.pass === '비밀번호' ? 'default' : 'filled'}
             />
-            {errors.email && <p className={styles.error}>{errors.email}</p>}
+
+            <button
+              type="button"
+              className={styles.eyeButton}
+              onClick={() => setShowPassword((prev) => !prev)}
+            >
+              👁️‍🗨️
+            </button>
           </div>
-
-          <div className={styles.field}>
-            <label htmlFor="pass" className={styles.label}></label>
-            <div className={styles.passwordWrapper}>
-              <input
-                id="pass"
-                name="pass"
-                type={showPassword ? 'text' : 'password'}
-                value={formData.pass}
-                onChange={handleChange}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                className={styles.input}
-                data-state={formData.pass === '비밀번호' ? 'default' : 'filled'}
-              />
-
-              <button
-                type="button"
-                className={styles.eyeButton}
-                onClick={() => setShowPassword((prev) => !prev)}
-              >
-                👁️‍🗨️
-              </button>
-            </div>
-            {errors.pass && <p className={styles.error}>{errors.pass}</p>}
-          </div>
-
+          {errors.pass && <p className={styles.error}>{errors.pass}</p>}
+        </div>
+        <div className={styles.loginBlock}>
           <button
             type="submit"
             className={styles.button}
@@ -207,8 +205,8 @@ export default function LoginForm() {
               가입하기
             </Link>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 }

@@ -1,0 +1,101 @@
+@use '@/styles/mixin.scss' as mixin;
+
+.pageContainer {
+  background-color: var(--color-background);
+}
+
+.wrapper {
+  background-color: var(--color-background);
+  min-height: 100vh;
+  border-radius: 12px;
+  margin-bottom: 92px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 213px;
+  margin-bottom: 60px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  @include mixin.text-xl-b;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  margin-bottom: 40px;
+}
+.nicknameField {
+  margin-top: 40px;
+}
+
+.label {
+  display: block;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  @include mixin.text-xl-p;
+}
+.input {
+  width: 100%;
+  height: 64px;
+  padding: 16px 16px;
+  border: 1px solid var(--blue-300);
+  background-color: var(--blue-200);
+  border-radius: 12px;
+}
+
+.input[data-state='default'],
+.input[data-state='filled'] {
+  @include mixin.text-xl-p;
+  color: var(--blue-400);
+}
+.passwordGroup {
+  display: flex;
+
+  flex-direction: column;
+  margin-top: 92px;
+}
+
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eyeButton {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 4px;
+  @include mixin.text-sm-13-medium-error;
+  align-self: flex-start;
+}
+
+.button {
+  width: 640px;
+  height: 64px;
+  padding: 16px 16px;
+  gap: 8px;
+  background-color: var(--blue-300);
+  border: 1px solid var(--blue-200);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.buttonText {
+  color: var(--blue-100);
+  @include mixin.text-xl-p;
+}

@@ -2,44 +2,42 @@
 
 .wrapper {
   width: 640px;
-  height:148px;
-
+  height: 148px;
 }
 
 .card {
-    background-color: var(--blue-100);
-    border: 1px solid #f2f2f2;
-    width: 100%;
-    height: 196px;
-    border-radius: 12px;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-  
-    background-image: repeating-linear-gradient(
-      to bottom,
-      #e0e0e0,
-      #e0e0e0 1px,
-      transparent 1px,
-      transparent 28px
-    );
-  }
-  
+  background-color: var(--blue-100);
+  border: 1px solid #f2f2f2;
+  width: 100%;
+  height: 196px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #e0e0e0 1px,
+    transparent 1px,
+    transparent 28px
+  );
+}
 
 .quote {
-    text-align: center;
+  text-align: center;
   padding: 23px 24px 16px 24px;
   margin-bottom: 8px;
 }
 
 .author {
-    @include text-2xl-b;
-    color: var(--blue-400);
-  
+  @include text-2xl-b;
+  color: var(--blue-400);
+
   text-align: right;
-  margin-right: 24px
+  margin-right: 24px;
 }
 
 .separator {
@@ -57,8 +55,8 @@
   color: var(--blue-400);
   white-space: nowrap;
 }
-.styles{
-    width:146px;
-    height:40px;
-    gap:16px;
+.styles {
+  width: 146px;
+  height: 40px;
+  gap: 16px;
 }
