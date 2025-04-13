@@ -1,0 +1,70 @@
+@use '@/styles/mixin' as mixin;
+
+.dropdownWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 9999px;
+  color: #79747e;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e7eb;
+  }
+}
+
+.dropdownMenu {
+  display: block;
+  width: 134px;
+  height: 56px;
+
+  width: 134px;
+  height: 112px;
+  background-color: var (--blue-100);
+  opacity: 0.95;
+  margin-left: -150px;
+  margin-bottom: -200px;
+
+  border-radius: 16px;
+  gap: 8px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.menuItem {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  background-color: transparent;
+  border-bottom: 1px solid #dddddd;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
