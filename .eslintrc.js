@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    jest: true, // ✅ jest 글로벌 변수 허용
+    jest: true,
   },
   extends: ['next/core-web-vitals'],
   rules: {
