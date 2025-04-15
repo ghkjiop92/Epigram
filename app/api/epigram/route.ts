@@ -1,7 +1,8 @@
-'use client ';
-import prisma from 'lib/prisma';
+// app/api/epigram/route.ts
 import { NextResponse } from 'next/server';
+import prisma from 'lib/prisma';
 
+// ✅ GET: 에피그램 목록 조회
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
@@ -30,11 +31,13 @@ export async function GET(req: Request) {
   }
 }
 
+// ✅ POST: 에피그램 새로 저장
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { content, author, sourceTitle, sourceUrl, tags } = body;
 
+    // 유효성 검사
     if (!content || content.length > 500) {
       return NextResponse.json(
         { error: '내용은 500자 이내여야 합니다.' },
@@ -55,7 +58,7 @@ export async function POST(req: Request) {
         author,
         sourceTitle,
         sourceUrl,
-        tags: (tags || []).join(','),
+        tags: Array.isArray(tags) ? tags.join(',') : tags || null,
       },
     });
 
