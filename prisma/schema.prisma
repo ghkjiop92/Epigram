@@ -4,18 +4,19 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 model Epigram {
-  id          String   @id @default(uuid())
-  content     String? 
-  author      String?
-  sourceTitle String?
-  sourceUrl   String?
-  tags        String?   
+  id         Int      @id @default(autoincrement())
+  content    String
+  author     String
+  sourceTitle String?    
+  sourceUrl   String?    
+  tags        String?  
   createdAt   DateTime @default(now())
 }
+
 
 model Card {
   id         Int      @id @default(autoincrement())

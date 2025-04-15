@@ -8,11 +8,11 @@ interface InputFieldProps {
   name: string;
   type?: string;
   value: string;
-  placeholder?: string; // ✅ 오타 수정 완료
+  placeholder?: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onFocus?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void; // ✅ 필요한 경우
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   error?: string;
 }
 
@@ -21,7 +21,7 @@ export default function InputField({
   name,
   type = 'text',
   value,
-  placeholder, // ✅ 오타 수정 완료
+  placeholder,
   onChange,
   onFocus,
   onBlur,
@@ -35,7 +35,7 @@ export default function InputField({
         name={name}
         type={type}
         value={value}
-        placeholder={placeholder} // ✅ 여기서도 수정
+        placeholder={placeholder}
         onChange={onChange}
         onFocus={onFocus}
         onBlur={onBlur}

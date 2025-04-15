@@ -1,7 +1,8 @@
 @use '@/styles/mixin' as mixin;
 
 .dropdownWrapper {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -10,6 +11,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 36px;
+  height: 36px;
 
   border-radius: 9999px;
   color: #79747e;
@@ -23,28 +26,22 @@
 }
 
 .dropdownMenu {
-  display: block;
+  position: absolute;
+  top: 40px;
+  right: 0;
   width: 134px;
-  height: 56px;
-
-  width: 134px;
-  height: 112px;
-  background-color: var (--blue-100);
+  background-color: var(--blue-100);
   opacity: 0.95;
-  margin-left: -150px;
-  margin-bottom: -200px;
-
   border-radius: 16px;
-  gap: 8px;
-  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  overflow: hidden;
 }
 
 .dropdownContent {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .menuItem {
@@ -54,17 +51,17 @@
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  padding-top: 12px;
-  padding-right: 32px;
-  padding-bottom: 12px;
-  padding-left: 32px;
+  padding: 12px 32px;
   background-color: transparent;
-  border-bottom: 1px solid #dddddd;
   border: none;
-  outline: none;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 
-  &:last-child {
-    border-bottom: none;
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
   }
 }

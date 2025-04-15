@@ -1,8 +1,6 @@
-// app/api/auth/route.ts
-
 import { NextResponse } from 'next/server';
 import { compare } from 'bcrypt';
-import prisma from '../../lib/prisma'; // ⚠️ 실제 경로에 맞게 수정하세요
+import prisma from '../../lib/prisma';
 
 export async function POST(req: Request) {
   try {
@@ -36,7 +34,6 @@ export async function POST(req: Request) {
       );
     }
 
-    // 로그인 성공 처리
     return NextResponse.json({
       message: '로그인 성공',
       user: { id: user.id, email: user.email },

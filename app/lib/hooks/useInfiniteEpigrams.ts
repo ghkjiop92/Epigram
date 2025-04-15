@@ -7,6 +7,8 @@ import {
 } from '@tanstack/react-query';
 import axios from 'axios';
 export interface Epigram {
+  tags: any;
+  content: string;
   id: number;
   quote: string;
   author: string;
