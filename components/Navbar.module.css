@@ -1,0 +1,24 @@
+.navcolor {
+    background-color: var(--blue-100);
+    width: 1920px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 120px; 
+
+  }
+
+  
+  .book-logo {
+    padding-right:4px;
+
+  
+  }
+  
+
+  .feed{
+    @include text-lg-semibold;
+    padding-left:35px;
+    text-decoration: none;
+  }
