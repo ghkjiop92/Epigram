@@ -1,0 +1,152 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+:root {
+  --black-100: #f9f9f9;
+  --black-200: #6b6b6b;
+  --black-300: #5e5e5e;
+  --black-400: #525252;
+  --black-500: #454545;
+  --black-600: #373737;
+  --black-700: #373737;
+  --black-800: #373737;
+  --black-900: #373737;
+  --black-950: #373737;
+
+  --blue-100: #ffffff;
+  --blue-200: #eceff4;
+  --blue-300: #cbd3e1;
+  --blue-400: #abb8ce;
+  --blue-500: #8b9dbc;
+  --blue-600: #6a82a9;
+  --blue-700: #52698e;
+  --blue-800: #40526e;
+  --blue-900: #2d394e;
+  --blue-950: #1a212d;
+
+  --color-background: #f5f7fa;
+  --color-primary: #ff6577;
+  --main-bg-100: #f2f2f2;
+  --main-bg-200: #cfdbea;
+
+  --gray-100: #dedede;
+  --gray-200: #c4c4c4;
+  --gray-300: #ababab;
+  --gray-400: #919191;
+}
+body {
+  background-color: #f5f7fa;
+}
+
+/* Pretendard */
+@mixin text-4xl-p {
+  font-family: 'Pretendard';
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+@mixin text-3xl-p {
+  font-family: 'Pretendard';
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+@mixin text-2xl-p {
+  font-family: 'Pretendard';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin text-xl-p {
+  font-family: 'Pretendard';
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin text-lg-p {
+  font-family: 'Pretendard';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+@mixin text-md-p {
+  font-family: 'Pretendard';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin text-sd-p {
+  font-family: 'Pretendard';
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+@mixin text-xs-p {
+  font-family: 'Pretendard';
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Iropke Batang */
+@mixin text-4xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+@mixin text-3xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+@mixin text-2xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+@mixin text-xl-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@mixin text-lg-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+@mixin text-md-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin text-sm-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin text-xs-b {
+  font-family: 'Iropke Batang OTF';
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}

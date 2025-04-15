@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npx prisma generate && next build",
+  "outputDirectory": ".next",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ."
+}
